@@ -1,12 +1,21 @@
 import React, { FC } from 'react';
+import { NavLink } from "react-router-dom";
 
 import styles from './Menu.module.scss';
 
+
 const Menu: FC = () => {
   return (
-    <div className={styles.menuWrapper}>
-      Menu
-    </div>
+    <nav className={styles.navbarWrapper}>
+      
+      <NavLink to="/">MainPage</NavLink>
+      <NavLink to="/filtersPage">FiltersPage</NavLink>
+      <NavLink to="/mapPage">MapPage</NavLink>
+      <NavLink to="/reviewPage">ReviewPage</NavLink>
+      <NavLink to="/faqPage">FaqPage</NavLink>
+
+    </nav>
+    
   );
 };
 

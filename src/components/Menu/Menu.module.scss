@@ -1,6 +1,8 @@
-.menuWrapper {
+.navbarWrapper {
   display: grid;
   justify-content: center;
+  grid-auto-flow: column;
+  gap: 1vw;
   // align-items: center;
 }
 
