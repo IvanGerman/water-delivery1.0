@@ -1,6 +1,11 @@
 import React, { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import Image1 from './../../assets/images/spring.jpg';
+import Image2 from './../../assets/images/winter.jpg';
+import Image3 from './../../assets/images/summer.jpg';
+import Image4 from './../../assets/images/autumn.jpg';
+
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,14 +28,10 @@ const FiltersPage: FC = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide><div className={styles.slide1}></div></SwiperSlide>
-        <SwiperSlide><div className={styles.slide2}></div></SwiperSlide>
-        <SwiperSlide>
-          <div className={styles.slide3}>
-            <img src='./../../assets/images/spring.jpg' alt='' className={styles.slide3img} />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide><img src={Image1} alt='' className={styles.slide4img} /></SwiperSlide>
+        <SwiperSlide><img src={Image2} alt='' className={styles.slide4img} /></SwiperSlide>
+        <SwiperSlide><img src={Image3} alt='' className={styles.slide4img} /></SwiperSlide>
+        <SwiperSlide><img src={Image4} alt='' className={styles.slide4img} /></SwiperSlide>
       </Swiper>
     </div>
   );
