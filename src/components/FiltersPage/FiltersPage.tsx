@@ -11,6 +11,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import './swiper-slide.css';
+
 
 import styles from './FiltersPage.module.scss'; 
 
@@ -28,10 +30,26 @@ const FiltersPage: FC = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide><img src={Image1} alt='' className={styles.slide4img} /></SwiperSlide>
-        <SwiperSlide><img src={Image2} alt='' className={styles.slide4img} /></SwiperSlide>
-        <SwiperSlide><img src={Image3} alt='' className={styles.slide4img} /></SwiperSlide>
-        <SwiperSlide><img src={Image4} alt='' className={styles.slide4img} /></SwiperSlide>
+        <SwiperSlide>
+          <img src={Image1} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 1</p>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+          <img src={Image2} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 2</p>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+          <img src={Image3} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 3</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Image4} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 4</p>
+        </SwiperSlide>
+
       </Swiper>
     </div>
   );
