@@ -1,4 +1,17 @@
+.swiper {
+  height: 100%;
+}
+
 .swiper-slide {
   display: grid;
   justify-content: center;
+}
+
+.swiper-button-next, .swiper-button-next:after {
+  height: 2vw;
+  font-size: 2vw;
+}
+
+.swiper-pagination-bullet {
+  height: 2vw !important;
 }
