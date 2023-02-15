@@ -2,10 +2,12 @@ import React, { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import Image1 from './../../assets/images/spring.jpg';
-import Image2 from './../../assets/images/winter.jpg';
-import Image3 from './../../assets/images/summer.jpg';
-import Image4 from './../../assets/images/autumn.jpg';
+import Image1 from './../../assets/images/mech-filter1.jpg';
+import Image2 from './../../assets/images/mech-filter2.jpg';
+import Image3 from './../../assets/images/osmos-filter1.jpg';
+import Image4 from './../../assets/images/osmos-filter2.jpg';
+import Image5 from './../../assets/images/ugol-filter1.jpg';
+import Image6 from './../../assets/images/ugol-filter2.jpg';
 
 
 import 'swiper/css';
@@ -48,6 +50,16 @@ const FiltersPage: FC = () => {
         <SwiperSlide>
           <img src={Image4} alt='' className={styles.slide4img} />
           <p className={styles.slider_p}>slide 4</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Image5} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 5</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Image6} alt='' className={styles.slide4img} />
+          <p className={styles.slider_p}>slide 6</p>
         </SwiperSlide>
 
       </Swiper>

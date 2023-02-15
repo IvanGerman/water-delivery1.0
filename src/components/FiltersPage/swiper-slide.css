@@ -13,5 +13,6 @@
 }
 
 .swiper-pagination-bullet {
+  width: 2vw !important;
   height: 2vw !important;
 }
