@@ -10,6 +10,7 @@ const Menu: FC = () => {
       
       <NavLink to="/">MainPage</NavLink>
       <NavLink to="/filtersPage">FiltersPage</NavLink>
+      <NavLink to="/usePage">UsePage</NavLink>
       <NavLink to="/mapPage">MapPage</NavLink>
       <NavLink to="/reviewPage">ReviewPage</NavLink>
       <NavLink to="/faqPage">FaqPage</NavLink>

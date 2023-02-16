@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
 import MapPage from './components/MapPage/MapPage';
 import ReviewPage from './components/ReviewPage/ReviewPage';
+import UsePage from './components/UsePage/UsePage';
 
 
 const App: FC = () => {
@@ -18,6 +19,7 @@ const App: FC = () => {
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="filtersPage/*" element={<FiltersPage/>}/>
+        <Route path="usePage/*" element={<UsePage/>}/>
         <Route path="mapPage/*" element={<MapPage/>}/>
         <Route path="reviewPage/*" element={<ReviewPage/>}/> 
         <Route path="faqPage/*" element={<FaqPage/>}/>        

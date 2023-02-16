@@ -34,32 +34,62 @@ const FiltersPage: FC = () => {
       >
         <SwiperSlide>
           <img src={Image1} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 1</p>
+          <p className={styles.slider_p}>Механический фильтр 5 мкм</p>
         </SwiperSlide>
         
         <SwiperSlide>
           <img src={Image2} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 2</p>
+          <p className={styles.slider_p}>Ионно-обменный фильтр</p>
         </SwiperSlide>
         
         <SwiperSlide>
           <img src={Image3} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 3</p>
+          <p className={styles.slider_p}>Угольный фильтр 5 мкм</p>
         </SwiperSlide>
 
         <SwiperSlide>
           <img src={Image4} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 4</p>
+          <p className={styles.slider_p}>Угольный фильтр 1 мкм</p>
         </SwiperSlide>
 
         <SwiperSlide>
           <img src={Image5} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 5</p>
+          <p className={styles.slider_p}>Обратно-осмотическая мембрана</p>
         </SwiperSlide>
 
         <SwiperSlide>
           <img src={Image6} alt='' className={styles.slide4img} />
-          <p className={styles.slider_p}>slide 6</p>
+          <p className={styles.slider_p}>Угольный постфильтр 5 мкм</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Угольный постфильтр 1 мкм</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Магнитный структуратор</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Био-керамический резонатор</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Ультрафиолетовый стерилизатор</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Антиоксидантный ионизатор</p>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          {/* <img src={Image6} alt='' className={styles.slide4img} /> */}
+          <p className={styles.slider_p}>Постфильтр тонкой очистки</p>
         </SwiperSlide>
 
       </Swiper>

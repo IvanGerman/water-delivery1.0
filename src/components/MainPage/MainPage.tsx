@@ -5,7 +5,8 @@ import styles from './MainPage.module.scss';
 const MainPage: FC = () => {
   return (
     <div className={styles.mainPageWrapper}>
-      MainPage
+      <p className={styles.rodnichokP}>Родничок</p>
+      <h1>Сеть автоматов питьевой воды</h1>     
     </div>
   );
 };
