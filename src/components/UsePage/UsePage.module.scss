@@ -8,3 +8,44 @@
   background-color: rgb(247, 113, 124);
 }
 
+.usePageWrapper p {
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  text-align: center;
+}
+
+.innerDivContainer {
+  width: 90vw;
+  height: 50vh;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.automatImage {
+  width: 40vw;
+  height: 50vh;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.useSlider {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+.automatImage {
+
+}
+
+.pWrapperDiv {
+  padding-top: 10vw;
+  // display: grid;
+  // align-items: center;
+  // row-gap: 0.5vw;
+}
+
+.slider_p {
+  font-size: 1.4vw;
+}
+
