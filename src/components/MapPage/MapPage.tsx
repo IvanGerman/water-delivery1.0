@@ -8,8 +8,8 @@ const MapPage: FC = () => {
     <div className={styles.mapPageWrapper}>
       <YMaps>
         <div>
-          My awesome application with maps!
-          <Map width={500}
+          Автоматы "Родничок" на карте
+          <Map width={550}
                height={500} 
                defaultState = {
               { center: [56.492644, 85.054446],

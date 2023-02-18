@@ -1,11 +1,13 @@
 .faqPageWrapper {
-  width: 100vw;
-  height: 60vh;
+  max-width: 100vw;
+  height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: grid;
   justify-content: center;
   font-size: 2vw;
   color: rgb(3, 5, 23);
-  background-color: rgb(193, 46, 222);
+  //background-color: rgb(193, 46, 222);
 }
 
 .faqPageWrapper p {
