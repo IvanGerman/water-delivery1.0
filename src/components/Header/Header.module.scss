@@ -1,9 +1,17 @@
 .headerWrapper {
   width: 100vw;
-  height: 5vh;
+  height: 8vh;
   display: grid;
   justify-content: center;
+  grid-auto-flow: column;
+  gap: 20vw;
   // align-items: center;
   background-color: rgb(13, 45, 171);
+
 }
 
+.logoDiv {
+  width: 10vw;
+  height: 7vh;
+  border: 1px solid red;
+}

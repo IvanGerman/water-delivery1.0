@@ -2,11 +2,13 @@
   display: grid;
   justify-content: center;
   grid-auto-flow: column;
-  gap: 1vw;
-  // align-items: center;
+  gap: 2vw;
+  align-items: center;
 }
 
 a {
   color: aliceblue;
+  font-size: 1.4vw;
+  text-decoration:none;
 }
 
