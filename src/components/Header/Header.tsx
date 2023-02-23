@@ -8,7 +8,16 @@ import LogoText from '../../assets/images/logo_text.png';
 
 
 const Header = () => {
+
   const [nav, setNav] = useState(false);
+  
+  const menuUl = document.querySelector('#menu-ul');
+  const removeBurgerMenu = () => {
+    if (window.innerWidth <= 800) { 
+      menuUl?.classList.remove(style.active);
+      setNav(!nav) }
+  }
+
   return (
     <header className={style.header}>
       <div className='container'>
@@ -21,25 +30,25 @@ const Header = () => {
             //@ts-ignore
             className={
               nav ? [style.menu, style.active].join(' ') : [style.menu]
-            }
+            } id='menu-ul'
           >
             <li>
-              <NavLink to="/">MainPage</NavLink>
+              <NavLink to="/" onClick={removeBurgerMenu}>MainPage</NavLink>
             </li>
             <li>
-              <NavLink to="/filtersPage">FiltersPage</NavLink>
+              <NavLink to="/filtersPage" onClick={removeBurgerMenu}>FiltersPage</NavLink>
             </li>
             <li>
-              <NavLink to="/usePage">UsePage</NavLink>
+              <NavLink to="/usePage" onClick={removeBurgerMenu}>UsePage</NavLink>
             </li>
             <li>
-              <NavLink to="/mapPage">MapPage</NavLink>
+              <NavLink to="/mapPage" onClick={removeBurgerMenu}>MapPage</NavLink>
             </li>
             <li>
-              <NavLink to="/reviewPage">ReviewPage</NavLink>
+              <NavLink to="/reviewPage" onClick={removeBurgerMenu}>ReviewPage</NavLink>
             </li>
             <li>
-              <NavLink to="/faqPage">FaqPage</NavLink>
+              <NavLink to="/faqPage" onClick={removeBurgerMenu}>FaqPage</NavLink>
             </li>
           </ul>
           <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
