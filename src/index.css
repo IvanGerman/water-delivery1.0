@@ -21,6 +21,9 @@ code {
 }
 
 
+a {
+  text-decoration: none;
+}
 
 
 .container {
@@ -31,4 +34,8 @@ code {
 
 ul {
   padding-inline-start: 0px;
+}
+
+li {
+  list-style-type: none;
 }
