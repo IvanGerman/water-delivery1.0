@@ -10,9 +10,10 @@ const FaqPage: FC = () => {
     console.log(accordions);
     
   for (let i = 0; i < accordions.length; i++) {
-  accordions[i].addEventListener("click", function () {
+  accordions[i].addEventListener("click", function () { console.log('activeAcc');
+  
     //@ts-ignore
-    this.classList.toggle("active");
+    this.classList.toggle("activeAcc");
     //@ts-ignore
     let answerDiv = this.nextElementSibling;
     if (answerDiv.style.maxHeight) {
@@ -27,10 +28,10 @@ const FaqPage: FC = () => {
 
   return (
     <div className="containerFluid">
-  <h2>Frequently Asked Questions(FAQs)</h2>
+  <h2>Часто задаваемые вопросы</h2>
   <div className="accordion">
     <div className="icon"></div>
-    <h5>What is Lorem Ipsum?</h5>
+    <h5>Принцип работы автомата</h5>
   </div>
   <div className="answerDiv">
     <p>
@@ -45,7 +46,7 @@ const FaqPage: FC = () => {
 
   <div className="accordion">
     <div className="icon"></div>
-    <h5>Why do we use it?</h5>
+    <h5>Как часто меняются фильтры?</h5>
   </div>
   <div className="answerDiv">
     <p>
@@ -60,7 +61,7 @@ const FaqPage: FC = () => {
 
   <div className="accordion">
     <div className="icon"></div>
-    <h5>Where does it come from?</h5>
+    <h5>По каким анализам проверяем качество воды?</h5>
   </div>
   <div className="answerDiv">
     <p>
@@ -75,7 +76,7 @@ const FaqPage: FC = () => {
 
   <div className="accordion">
     <div className="icon"></div>
-    <h5>Why do we use it?</h5>
+    <h5>Сколько стоит вода?</h5>
   </div>
   <div className="answerDiv">
     <p>
@@ -90,7 +91,7 @@ const FaqPage: FC = () => {
 
   <div className="accordion">
     <div className="icon"></div>
-    <h5>Where does it come from?</h5>
+    <h5>В какую тару можно набрать воды?</h5>
   </div>
   <div className="answerDiv">
     <p>
@@ -105,7 +106,52 @@ const FaqPage: FC = () => {
 
   <div className="accordion">
     <div className="icon"></div>
-    <h5>Where does it come from?</h5>
+    <h5>Даёт ли автомат сдачу?</h5>
+  </div>
+  <div className="answerDiv">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.
+    </p>
+  </div>
+
+  <div className="accordion">
+    <div className="icon"></div>
+    <h5>В какую тару можно набрать воды?</h5>
+  </div>
+  <div className="answerDiv">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.
+    </p>
+  </div>
+
+  <div className="accordion">
+    <div className="icon"></div>
+    <h5>Какие преимущества покупки воды по АКВА КЛЮЧУ?</h5>
+  </div>
+  <div className="answerDiv">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.
+    </p>
+  </div>
+
+  <div className="accordion">
+    <div className="icon"></div>
+    <h5>Где можно приобрести АКВА КЛЮЧ?</h5>
   </div>
   <div className="answerDiv">
     <p>
