@@ -6,18 +6,18 @@ import './styles.css';
 const FaqPage: FC = () => {
 
   useEffect(() => {
-    const accordions = document.getElementsByClassName("accordion");
+    const accordions: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("accordion") as HTMLCollectionOf<HTMLElement>;
     console.log(accordions);
     
   for (let i = 0; i < accordions.length; i++) {
-  accordions[i].addEventListener("click", function () { console.log('activeAcc');
+  accordions[i].addEventListener("click", function (this: HTMLElement) { console.log('activeAcc');
   
-    //@ts-ignore
     this.classList.toggle("activeAcc");
-    //@ts-ignore
-    let answerDiv = this.nextElementSibling;
+    
+    let answerDiv = this.nextElementSibling as HTMLElement;
     if (answerDiv.style.maxHeight) {
-      answerDiv.style.maxHeight = null;
+      //@ts-ignore
+      answerDiv.style.maxHeight  = null;
     } else {
       answerDiv.style.maxHeight = answerDiv.scrollHeight + "px";
     }
